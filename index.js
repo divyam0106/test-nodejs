@@ -3,7 +3,8 @@ const app = express();
 
 const PORT = 3000
 
-require("dotenv")
+const dotenv = require('dotenv');
+dotenv.config();
 
 app.get("/getAccess",(req,res)=>{
     console.log("inside get req",process.env.ACCESSKEY,process.env.ACCESSID);
