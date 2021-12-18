@@ -1,11 +1,8 @@
-version: '3.4'
-
+version: "3.5"
 services:
-  test:
-    image: test-backend
-    build:
-      context: .
-      dockerfile: ./Dockerfile
+  nodeapp:
+    image: divyam01/nodeapp
     ports:
-      - 3000:3000
+    - "3000:3000"
+    container_name: nodeapp
     
