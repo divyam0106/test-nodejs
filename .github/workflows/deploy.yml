@@ -63,4 +63,4 @@ jobs:
           port: ${{secrets.INSTANCE_SSH_PORT}}
           script: |
             docker rm nodeapp
-            cd test/ && docker-compose up -d
+            cd test/ && sudo docker-compose up -d --build
